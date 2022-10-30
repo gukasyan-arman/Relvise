@@ -92,9 +92,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	}	
 }
 
-._container {
-}
-
 .header__logo {
 	font-size: 24px;
 	font-weight: 700;
@@ -160,6 +157,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .page__main-block {
 }
 
+.page__sevices {
+	margin-top: -111px;
+	position: relative;
+	z-index: 2;
+}
+
 /* ====================================Main-block==================================== */
 
 .main-block {
@@ -167,9 +170,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .main-block__container {
-}
-
-._container {
 }
 
 .main-block__body {
@@ -281,6 +281,93 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	}
 }
 
+/* ====================================Page-sevices==================================== */
+
+.services {
+}
+
+.services__container {
+}
+
+.services__body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 -15px;
+}
+
+.services__column {
+	padding: 0 15px;
+	flex: 0 1 33.333%;
+}
+
+@media (max-width: 992px) {
+	.services__column {
+		padding: 0 15px;
+		flex: 0 1 50%;
+	}
+
+	.services__body {
+		justify-content: center;
+	}
+
+	.item-service-green {
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 574px) {
+	.services__column {
+		padding: 0;
+		flex: 0 1 70%;
+		margin-bottom: 20px;
+	}
+
+	.services__body {
+		justify-content: center;
+	}
+}
+
+.services__item {
+	background: white;
+	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+	padding: 35px;
+	height: 100%;
+}
+
+.item-service {
+}
+
+.item-service__icon {
+}
+
+.item-service__title {
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.1px;
+	line-height: calc(32 / 24 * 100%);
+	margin: 10px 0;
+}
+
+.item-service__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(20 / 14 * 100%);
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+
+.item-service-green {
+	background: #0D5C63;
+}
+
+.item-service-green .item-service__title {
+	color: white;
+}
+
+.item-service-green .item-service__text {
+	color: white;
+}
 
 /* ====================================Footer==================================== */
 
