@@ -169,6 +169,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .page__whoweare {
 }
+.page__clients {
+}
 /* ====================================Header-block==================================== */
 
 .header-block {
@@ -676,6 +678,30 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	.whoweare__content {
 		padding: 0 15px 0 15px;
 	}
+}
+
+/* ====================================Clients==================================== */
+
+.clients {
+	padding: 50px 0;
+}
+.clients__container {
+}
+.clients__items {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.clients__item {
+	flex: 0 1 16.6667%;
+	text-align: center;
+	padding: 8px 5px;
+	min-width: 120px;
+}
+
+.clients__item img {
+	max-width: 100%;
 }
 
 /* ====================================Footer==================================== */
